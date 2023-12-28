@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="atas">
+                <div class="card-foto">
+                    <div class="foto">
+                         <img src="/FotoSelfie.jfif" alt="" class="FotoSelfie">
+                    </div>
+                </div>
+            </div>
+            <div class="back">
+
+            </div>
+            <div class="bawah">
+                <div class="icon">
+                    <img src="/file-code-solid.svg" alt="" class="ic">
+                    <img src="/user-secret-solid.svg" alt="" class="ic">
+                    <img src="/github.svg" alt="" class="ic">
+                </div>
+                <h2>Moh Ryan Khalifatul Huda</h2>
+                <div class="ket">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam esse tempora illum atque voluptates id quidem suscipit minima ex autem nihil debitis eveniet earum iusto vel, a neque, quos dolorum?</p>
+                </div>
+                    <div class="button-container">
+                        <a href="/01.html"><div class="button">Task01</div></a>   
+                        <a href="/index.html"><div class="button">BACK</div></a> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        body{
+            margin: 0;
+        }
+        .container {
+            background-color: aqua;
+            width: 100vmax;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card {
+            width: 500px;
+            height: 650px; 
+            background-color: white;
+            border-radius: 30px 30px;
+            
+        }
+        .atas {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 325px;            
+            background-color: blue;
+            border-radius: 30px 30px 50px 50px;
+            position: relative;
+            z-index: 3;
+        }
+        .bawah {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 325px;            
+            background-color: white;
+            border-radius: 50px 50px 30px 30px;
+            position: relative;
+            z-index: 3;
+            margin: 0;
+        }
+        .button {
+            width: 100px;
+            height: 40px;
+            background-color: blue;
+            display: flex;
+            color: white;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            border-radius: 15px;
+            margin-top: 20px;
+        }
+        .button-container {
+            display: flex;
+            width: 250px;
+            justify-content: space-around;
+        }
+        .icon {
+            display: flex;
+            justify-content: space-evenly;
+            width: 250px;
+        }
+        .ic {
+            width: 25px;
+            height: 25px;
+        }
+        .ket {
+            display: flex;
+            justify-content: center;
+            text-align: justify;
+            margin: 0 20px;
+        }
+        .back {
+            width: 500px;
+            height: 250px;
+            background-color: blue;
+            position: absolute;
+            z-index: 2;
+        }
+        .card-foto {
+            width: 145px;
+            height: 145px;
+            border-radius: 200px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            z-index: 3;
+        }
+        .foto {
+            width: 135px;
+            height: 135px;
+            border-radius: 200px;
+            background-color: blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            z-index: 3;
+        }
+        .FotoSelfie {
+            width: 125px;
+            height: 125px;
+            border-radius: 200px;
+            position: relative;
+            z-index: 3;
+        }
+    </style>
+</body>
+</html>

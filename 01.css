@@ -107,3 +107,16 @@ p {
     width: 40vh;
     height: 250px;
 }
+.button {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+    height: 45px;
+    background-color: midnightblue;
+    border-radius: 15px;
+}
+.button a{
+    color: white;
+}
