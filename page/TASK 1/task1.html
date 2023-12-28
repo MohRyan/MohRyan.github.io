@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK 1</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="atas">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non reiciendis doloremque nihil voluptatum aperiam. Odio quibusdam asperiores repellendus enim excepturi a nostrum, nisi labore facere sunt fuga, illum distinctio possimus earum dolorem et, ducimus accusantium cum dignissimos non fugiat! Facere dignissimos, dicta sapiente iste nobis deleniti quasi dolor omnis, voluptatum repudiandae obcaecati repellat doloremque pariatur, quibusdam tempore totam? Iste animi eius atque, dignissimos nostrum optio ab corporis. Officiis dignissimos quaerat totam tempora voluptatibus assumenda quae vitae dolore ab quas enim ullam eligendi natus labore, aliquam ipsum temporibus placeat cumque culpa optio consequuntur repudiandae quidem atque voluptatem! Laborum eveniet maiores autem, earum eligendi voluptates recusandae ab error nostrum adipisci sapiente placeat maxime quae accusantium modi eius? Iusto nihil tempore hic, quod quia sequi doloribus et ipsam rerum repellat inventore sunt est. Dolorum explicabo nam praesentium non optio eligendi dolor! Itaque cupiditate laboriosam, distinctio modi non illo laudantium quam quia quo obcaecati!</p>
+            <div class="foto">
+                <img src="/page/TASK 1/FotoSelfie.jfif" alt="" class="FotoSelfie">
+                <div class="nama">
+                    <p class="name" style="margin-bottom: 5px;">Moh Ryan</p>
+                    <p class="front">Front End Developer</p>
+                </div>
+            </div>
+        </div>
+        <div class="icon-container"> 
+            <div class="icon">
+                <div class="icon-github">
+                    <p><a href="https://github.com/MohRyan/mohryan.github.io" title="Github" style="text-decoration: none;"><img src="/page/TASK 1/github.svg" alt="" class="icon-icon"></a></p>
+                </div>
+                <div class="icon-deploy">
+                    <a href="https://mohryan.github.io/"><img src="/page/TASK 1/file-code-solid.svg" title="Github Deploy" alt="" class="icon-icon"></a>
+                    <p><a href="https://github.com/MohRyan/mohryan.github.io" title="Netlify Deploy" style="text-decoration: none;"><img src="/page/TASK 1/user-secret-solid.svg" alt="" class="icon-icon"></a></p>
+                </div>
+            </div> 
+        </div>
+        <div class="bawah">
+            <div class="bawah-container">
+                <div class="kanan">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit ullam tempora quasi culpa quas deserunt consequuntur ea sequi ratione eos alias magnam perferendis, totam possimus laboriosam praesentium neque voluptatum veniam cum, natus tempore amet ad id vel. Voluptas reiciendis corporis inventore maiores expedita.</p>
+                </div>
+                <div class="pembatas">
+
+                </div>
+                <div class="kiri">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit ullam tempora quasi culpa quas deserunt consequuntur ea sequi ratione eos alias magnam perferendis, totam possimus laboriosam praesentium neque voluptatum veniam cum, natus tempore amet ad id vel. Voluptas reiciendis corporis inventore maiores expedita.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <style>
+        body {
+            margin: 0;
+            background-color: aliceblue;
+        }
+        .icon-deploy {
+            display: flex;
+            flex-direction: row;
+        }
+        .nama {
+            font-family: Verdana, Geneva, Tahoma, sans-serif, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            /* background-color: aqua; */
+            height: 100px;
+        }
+        .name {
+            font-weight: 900;
+            font-size: x-large;
+            width: 100%;
+            margin: 0;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+        }
+        .front {
+            margin: 0;
+            font-weight: bold;
+        }
+        .icon-icon{
+            width: 45px; height: 45px;
+        }
+        .container {
+            /* background-color: aqua; */
+            width: 100vmax;
+            height: 100vmax;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .card {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            /* border: 1px solid black; */
+            width: 800px;
+            height: 800px;
+            border-radius: 10px;
+            box-shadow: 0 0 12px 5px rgba(0, 0, 0, 0.349);
+            padding: 20px 20px;
+            text-align: center;
+        }
+        .atas {
+            display: flex;
+            flex-direction: row;
+        }
+        .icon {
+            display: flex;
+            /* background-color: aqua; */
+            width: 100%;
+            height: 50px;
+            margin-top: 40px;
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-around; 
+        }
+        p {
+            text-align: justify;
+            margin-right: 25px;
+        }
+        .FotoSelfie{
+            width: 350px; 
+            height: 350px;
+            border-radius: 10px 10px 0 0;
+        }
+        .foto {
+            height: 450px;
+            /* background-color: azure; */
+            box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.349);
+            border-radius: 10px; 
+        }
+        .bawah {
+            margin-top: 12px;
+            width: 700;
+            /* background-color: blue; */
+            
+        }
+        .bawah-container {
+            display: flex;
+            flex-direction: row;
+        }
+        .kanan {
+            width: 40vh;
+            height: 250px;
+            /* background-color: aqua; */
+        }
+        .pembatas {
+            width: 5px;
+            height: 250px;
+            border-radius: 25px;
+            background-color: black;
+            margin-right: 20px;
+        }
+        .kiri {
+            width: 40vh;
+            height: 250px;
+        }
+    </style>
+</body>
+</html>
