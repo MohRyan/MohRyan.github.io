@@ -4,28 +4,176 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task02</title>
+    <link rel="icon" type="image/png" href="/assets/faviconlogo.png">
 </head>
 <body>
     <div class="container">
         <div class="header">
             <div class="nav">
-                <div class="nav-sub">
-                    
+                <div class="logo-nav">
+                    <img src="/assets/dumbwaysputih.png" class="logo" alt="">
                 </div>
+                <div class="nav-sub">
+                    <h2 class="active">Home</h2>
+                    <h2 class="active">My AllTask</h2>
+                </div>
+                <div class="contact">Contact Me</div>
             </div>
         </div>
         <div class="main">
-            <div class="form">
+            <div class="kiri">
+                <h1>Your Welcome</h1>
+                <div class="form">
+                    <p>Name</p>
+                    <input type="text" class="input">
+                    <p>Email</p>
+                    <input type="text" class="input">
+                    <p>Phone Number</p>
+                    <input type="number" class="input">
+                    <p>Subject</p>
+                    <select name="subject" id="" class="">
+                        <option value="Playing">Playing</option>
+                        <option value="Work">Work</option>
+                        <option value="Releationship">Releationship</option>
+                        <option value="Nothing Just Call">Nothing Just Call</option>
+                    </select>
+                    <p>Your Massage</p>
+                    <textarea name="massage" id="" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+            <div class="kanan">
 
             </div>
+            
         </div>
         <div class="footer">
             
         </div>
+        <div class="wa-contain">
+            <img src="/assets/whatsapp.svg" class="wa" alt="">
+        </div>
     </div>
 
     <style>
+        body {
+            margin: 0;
+            width: 100vmax;
+            height: 100vmax;
+        }
+        .wa{
+            width: 50px;
+            height: 50px;
+        }
+        .wa-contain {
+            width: 75px;
+            height: 75px;
+            z-index: 999;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            border-radius: 100px;
+            background-color: green;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+        }
+        .logo {
+            width: 80px;
+            height: 50px;
+            margin-left: 10px;
+        }
+        .nav {
+            width: 100vmax;
+            height: 80px;
+            background-color: rgb(255, 94, 0);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            /* position: fixed; */
+        }
+        .nav-sub {
+            display: flex;
+            margin-left: 10px;
+            gap: 30px;
+            width: 70vmax;
+        }
+        .active {
+            color: white;
+        }
+        .contact {
+            width: 15vmax;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            border-radius: 12px;
+            align-items: center;
+            color: white;
+            margin-right: 5px;
+            background-color: rgb(2, 20, 20);
+            font-size: large;
+            font-weight: 900;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .main {
+            display: flex;
+            width: 100vmax;
+            height: 100vmax;
+            /* padding-top: 80px; */
+        }
+        .kiri {
+            width: 50vmax;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: antiquewhite;
+        }
+        .form {
+            display: flex;
+            flex-direction: column;
+            /* padding: 15px; */
+            /* background-color: blue; */
+            width: 300px;
+            height: 600px;
+            /* margin: 0 30px; */
 
+        }
+        .form p {
+            margin: 30px 30px 5px 30px;
+            font-size: x-large;
+            font-weight: 700;
+        }
+        .form select {
+            margin: 0 30px;
+            width: 250px;
+            background-color: rgba(255, 68, 0, 0.212);
+
+        }
+        input {
+            margin: 0 0 0 30px;
+            border: none;
+        }
+        .input {
+            width: 250px;
+            height: 20px;
+            border: salmon 3px solid;
+            border-style: groove;
+            background-color: rgba(255, 68, 0, 0.212);
+        }
+        textarea {
+            margin: 0 0 0 30px;
+            width: 250px;
+            background-color: rgba(255, 68, 0, 0.212);
+            
+        }
+        .kanan {
+            width: 50vmax;
+            height: 100vh;
+            background-color: red;
+        }
     </style>
 </body>
 </html>
