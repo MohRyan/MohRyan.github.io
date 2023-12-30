@@ -2,93 +2,210 @@ body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
+@media screen and (max-width: 1100px) {
+    .container {
+        width: 100%;
+        display: flex;
+        overflow: hidden;
+        
+    } 
+    .navbar {
+        width: 100%;
+        height: 80px;
+        display: flex;
+    }
+    .task-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin-right: 50px;
+        margin-bottom: 200px;
+    }
+
+    li {
+        display: flex;
+        flex-direction: column;
+        height: 150px;
+        border-radius: 15px;
+        margin-bottom: 150px;
+    }
+    li a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    li img {
+        width: 350px;
+        height: 270px;
+    }
+    ul li a .img {
+        width: 450px;
+        height: 300px;
+    }
+    .text {
+        font-size: x-large;
+    }
+    .kel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        gap: 150px;
+    }
+    .kel1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .kel2 {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .kel3 {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .kel4 {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+    
+}
+@media screen and (max-width: 1150px) {
+    li {
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    ul {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+    }
+    /* ================ Card Task =================== */
+    .task-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        height: auto;
+        margin-right: 50px;
+        margin-bottom: 50px;
+    }
+    img {
+        width: 170px;
+        height: 150px;
+        border-radius: 15px;
+        margin: 0 10px ;
+    }
+    li a .img {
+        width: 220px;
+        height: 150px;
+        border-radius: 15px;
+    }
+    .kel {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    li a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
 
 /* ================ Navbar =================== */
 .container {
     display: flex;
     background-color: aqua;
-    width: 100vmax;
-    height: 100vmax;
+    width: 100%;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .navbar {
     background-color: bisque;
     display: flex;
-    width: 100vmax;
+    width: 100%;
     height: 60px;
     justify-content: center;
     align-items: center;
-    margin-bottom: 40px;
+} 
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
 }
 /* ================ Card Task =================== */
-.task {
-    width: 170px;
-    height: 150px;
-    background-color: white;
-    box-shadow: 0 0 4px 1px;
-    border-radius: 15px;
-}
-.task:hover {
-    scale: 1.8;
-    transition-delay: 0.1s;
-}
-.akhir {
-    width: 250px;
-    height: 170px;
-    background-color: white;
-    box-shadow: 0 0 4px 1px;
-    border-radius: 15px;
+.task-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: auto;
+    margin-right: 50px;
+    margin-bottom: 50px;
 }
 img {
     width: 170px;
     height: 150px;
     border-radius: 15px;
-
+    margin: 0 20px ;
 }
-.text {
-    position: absolute;
-    z-index: 25;
-    font-family: 'Poppins', sans-serif;
-    color: rgb(0, 0, 0);
-    text-shadow: 0 0 10px 2px;
-}
-a {
-    text-decoration: none;
-    color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 800;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.task-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100vmax;
-    height: 800px;
-    /* border: 1px solid black; */
-    flex-direction: column;
-    padding-bottom: 100px;
+li a .img {
+    width: 220px;
+    height: 150px;
+    border-radius: 15px;
 }
 .kel {
     display: flex;
-    flex-direction: row;
-    width: 100vmax;
-    height: 200px;
-    align-items: center;
-    justify-content: space-around;
-}
-.kel1 {
-    display: flex;
     flex-direction: column;
-    width: 100vmax;
-    height: 500px;
+    width: 100%;
     align-items: center;
-    justify-content: space-evenly;
-    /* background-color: yellow; */
+    justify-content: center;
 }
-.taskakhir:hover {
-    scale: 1.5;
-    transition-delay: 0.2s;
+li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }

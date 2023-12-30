@@ -1,12 +1,13 @@
 body {
     margin: 0;
     background-color: aliceblue;
+    overflow: hidden;
 }
 /* ================ Card =================== */
 .container {
-    /* background-color: aqua; */
-    width: 100vmax;
-    height: 100vmax;
+    background-color: silver;
+    /* width: 00vh; */
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;

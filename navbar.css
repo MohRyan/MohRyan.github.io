@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: orangered;
+    height: 50px;
+}
+/* =================LOGO============ */
+.logo-nav {
+    margin-left: 10px;
+    margin-right: 25px;
+}
+.logo {
+    width: 50px;
+    height: 35px;
+}
+/* =================AllTask============ */
+.alltask {
+    font-size: 150%;
+}
+
+/* =================Contact============ */
+/* .contact-sub {
+
+} */
+.contact {
+    width: 100px;
+    height: 35px;
+    color: black;
+    font-weight: bold;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+
+
+
+
