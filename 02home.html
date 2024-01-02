@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Task 02</title>
+    <link rel="icon" type="image/png" href="/assets/faviconlogo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="logo-nav">
+                <img src="/assets/dumbwaysputih.png" class="logo" alt="">
+            </div>
+            <div class="nav-sub">
+                <ul class="">
+                    <li class="home">Home</li>
+                    <li class=""><a href="/02myproject.html">My Project</a> </li>
+                </ul>
+            </div>
+            <div class="contact-sub">
+                <a href="/03.html"><div class="contact">Contact Me</div></a>
+            </div>
+        </div>
+<!-- ======================= Home Card =============================== -->
+        <div class="card-container">        
+            <div class="card">
+                <div class="kiri">
+                    <div class="text">
+                        <h2>Hi Welcome To My Profile</h2>
+                        <h6>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, impedit animi ipsa qui esse praesentium, molestiae commodi repellat aspernatur asperiores minima beatae deserunt id quibusdam quas quia voluptate fuga natus nostrum harum voluptas quo? Distinctio doloremque sed a voluptatem temporibus aut sit fugit cupiditate unde accusantium dolorem voluptas maiores beatae repellendus rem ut dolore architecto nihil quod quasi quas, vero magni laborum! Aspernatur, consequuntur ipsa? Assumenda esse at iste voluptas eius suscipit reiciendis repudiandae cupiditate corporis mollitia consequatur.</h6>
+                    </div>
+                    <div class="button-container">
+                        <a href="/03.html"><button>Contact</button></a>
+                        <a href="#"><span>Download CV</span><i class="fa-solid fa-download"></i></a>
+                    </div>
+                    <div class="icon-container">
+                        <div class="icon">
+                            <i class="fa-brands fa-github"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                    <div class="btn-navigasi">
+                        <a href="/01vidpres.html"><button>Video</button></a>
+                        <a href="/index.html"><button>Back</button></a>
+                    </div>
+                </div>
+                <div class="kanan">
+                    <div class="img-container">
+                        <div class="img">
+                            <img src="/assets/FotoSelfie.jfif" alt="" class="FotoSelfie">
+                        </div>
+                        <div class="nama-container">
+                            <span class="nama">Moh Ryan K H</span>
+                            <span class="status">FrontEnd Developer</span> 
+                        </div>
+                    </div>  
+                </div>
+            </div>       
+        </div>
+            
+    </div>
+    </div>
+
+    <style>
+    * {
+        font-family: 'Poppins', sans-serif;
+    }
+    .container {
+        background-color: hsla(0, 2%, 78%, 0.808);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .nav {
+        margin-bottom: 100px;
+        position: fixed;
+        top: 0;
+    }
+    .card-container {
+        background-color: hsl(0, 0%, 100%);
+        display: flex;
+        flex-direction: column;
+        width: 120vh;
+        height: 600px;
+        border-radius: 5px;
+        box-shadow: 0 0 12px 5px rgba(0, 0, 0, 0.349);
+        padding: 20px 20px;
+        align-items: center;
+    }
+    .card {
+        display: flex;
+        flex-direction: row;
+        width: 120vh;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+/* ================ kiri =============== */
+    .kiri {
+        width: 70vh;
+        padding: 0 35px;
+    }
+    .text h2{
+        display: flex;
+        justify-content: start;
+        margin-bottom: 35px;
+    }
+    h6 {
+        text-align: justify;
+        font-size: 12px; 
+        margin-bottom: 55px;
+    }
+    .icon-contain {
+        display: flex;     
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .icon {
+        display: flex;
+        justify-content: space-around;
+        width: 225px;
+        background-color: #fff;
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+    i {
+        font-size: 35px;
+    }
+    .button-container {
+        display: flex;     
+        align-items: center;
+        justify-content: start;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+
+    a i {
+        font-size: 25px;
+        margin-left: 15px;
+    }
+    button {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 105px;
+        height: 35px;
+        background-color: black;
+        border-radius: 25px;
+        margin-right: 25px;
+    }
+    a button:hover{
+        border: black 2px solid;
+        background-color: rgba(122, 122, 122, 0.349);
+        color: black;
+        cursor: pointer;
+    }
+    a button{
+        color: white;
+        font-weight: bold;
+    }
+/* ================ Kanan =============== */
+    .kanan {
+        width: 50vh;
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .img-container {
+        height: 430px;
+        width: 325px;
+        box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.349);
+        border-radius: 10px; 
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+    .img{
+        width: 325px; 
+        height: 325px;
+    }
+    .FotoSelfie{
+        width: 325px; 
+        height: 325px;
+        border-radius: 10px 10px 0 0;
+    }
+    .nama-container{
+        padding: 10px;
+    }
+    .nama{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .status {
+        font-size: small;
+        font-size: 15px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    /* =================Navigasi============== */
+    .btn-navigasi {
+        width: 65vh;
+        display: flex;
+        /* justify-content: space-between; */
+        position: fixed;
+        z-index: 99;
+        bottom: 175px;
+        
+    }
+    </style>
+</body>
+</html>

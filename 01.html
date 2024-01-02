@@ -4,33 +4,208 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TASK 1</title>
-    <link rel="stylesheet" href="01.css">
     <link rel="icon" type="image/png" href="/assets/faviconlogo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <div class="card">
-            <div class="atas">
-                <div class="foto">
-                    <img src="/assets/FotoSelfie.jfif" alt="" class="FotoSelfie">
-                    <div class="nama">
-                        <p class="name" style="margin-bottom: 5px;">Moh Ryan</p>
-                        <p class="front">Front End Developer</p>
+        <div class="card-container">        
+            <div class="card">
+                <div class="text">
+                    <h2>Hi Welcome To My Profile</h2>
+                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, impedit animi ipsa qui esse praesentium, molestiae commodi repellat aspernatur asperiores minima beatae deserunt id quibusdam quas quia voluptate fuga natus nostrum harum voluptas quo? Distinctio doloremque sed a voluptatem temporibus aut sit fugit cupiditate unde accusantium dolorem voluptas maiores. </span>
+                </div>
+                <div class="button-container">
+                    <a href="/03.html"><button>Contact</button></a>
+                </div>
+                <div class="cv-container">
+                    <a href="#"><span>Download CV</span><i class="fa-solid fa-download"></i></a>
+                </div>
+                <div class="icon-container">
+                    <div class="icon">
+                        <i class="fa-brands fa-github"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <i class="fa-brands fa-instagram"></i>
                     </div>
                 </div>
+                <div class="img-container">
+                    <div class="img">
+                        <img src="/assets/FotoSelfie.jfif" alt="" class="FotoSelfie">
+                    </div>
+                    <div class="nama-container">
+                        <span class="nama">Moh Ryan K H</span>
+                        <span class="status">FrontEnd Developer</span> 
+                    </div>
+                </div>  
             </div>
-            <div class="text">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, eligendi?</p>
+            <div class="btn-navigasi">
+                <a href="/01vidpres.html"><button>Video</button></a>
+                <a href="/index.html"><button>Back</button></a>
             </div>
-        <div class="bawah">
-            <div class="contain">
-                <div class="button"><a href="/01+.html" style="text-decoration: none;">Task01+</a></div>
-                <div class="video">
-                    <video src="/assets/How to Send HTML Form Data to Gmail Using JavaScript.mp4" autoplay controls width="380" height="200"></video>
-                </div>
-            </div>
-        </div>
         </div>
     </div>
+
+    <style>
+        
+    * {
+        font-family: 'Poppins', sans-serif;
+    }
+        
+    body {
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    }
+/* ================ Card =================== */
+    .container {
+        background-color: hsla(0, 0%, 91%, 0.808);
+        width: 150vh;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .card-container {
+        background-color: hsl(0, 0%, 100%);
+        display: flex;
+        flex-direction: column;
+        width: 80vh;
+        height: 800px;
+        border-radius: 5px;
+        box-shadow: 0 0 12px 5px rgba(0, 0, 0, 0.349);
+        padding: 20px 20px;
+        align-items: center;
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: 50vh;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .text h2{
+        display: flex;
+        justify-content: start;
+
+    }
+    .text {
+        text-align: justify;
+        margin-bottom: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .img-container {
+        width: auto;
+        height: 330px;
+        box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.349);
+        border-radius: 10px; 
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+    .img{
+        width: 255px; 
+        height: 255px;
+    }
+    .FotoSelfie{
+        width: 255px; 
+        height: 255px;
+        border-radius: 10px 10px 0 0;
+    }
+    .nama-container{
+        padding: 10px;
+    }
+    .nama{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .status {
+        font-size: small;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .icon-contain {
+        display: flex;     
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .icon {
+        display: flex;
+        justify-content: space-around;
+        width: 225px;
+        background-color: #fff;
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+    i {
+        font-size: 35px;
+    }
+    .button-container {
+        display: flex;     
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+
+    a i {
+        font-size: 25px;
+        margin-left: 15px;
+    }
+    .cv-container {
+        display: flex;     
+        align-items: center;
+        justify-content: start;
+        width: 100%;
+    }
+    button {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 105px;
+        height: 35px;
+        background-color: black;
+        border-radius: 25px;
+    }
+    a button:hover{
+        border: black 2px solid;
+        background-color: rgba(122, 122, 122, 0.349);
+        color: black;
+        cursor: pointer;
+    }
+    a button{
+        color: white;
+        font-weight: bold;
+    }
+    /* =================Navigasi============== */
+    .btn-navigasi {
+        width: 80vh;
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        z-index: 99;
+        bottom: 55px;
+        
+    }
+    </style>
+
+
 </body>
 </html>
+

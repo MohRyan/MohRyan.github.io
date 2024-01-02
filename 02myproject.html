@@ -3,26 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task02</title>
+    <title>My Project Task 02</title>
     <link rel="icon" type="image/png" href="/assets/faviconlogo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="/navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <div class="container">
+            <div class="">
                 <div class="nav">
                     <div class="logo-nav">
                         <img src="/assets/dumbwaysputih.png" class="logo" alt="">
                     </div>
-                    <div class="alltask">
-                        <a href="/index.html" style="text-decoration: none; color: white;">
-                            <h2 class="active">My All Task</h2>
-                        </a>
+                    <div class="nav-sub">
+                        <ul class="">
+                            <li class=""><a href="/02home.html">Home</a></li>
+                            <li class="myproject">My Project</li>
+                        </ul>
                     </div>
                     <div class="contact-sub">
-                    <div class="contact">Contact Me</div>
+                        <a href="/03.html"><div class="contact">Contact Me</div></a>
                     </div>
                 </div>
             </div>
@@ -47,19 +51,37 @@
                     <textarea class="massage" id="massage" name="massage" placeholder="Your Massage" id="" cols="30" rows="10"></textarea>
                     <div class="button-container">
                         <div onclick="input()" class="button">Submit</div>
-                        <a href="/02+.html">
-                        <div class="button">Task 02+</div>
+                        <a href="/02vidpres.html">
+                        <div class="button">Video</div>
                         </a>
                     </div>
             </div>
             
         </div>
-        <div class="footer">
-            
-        </div>
+        <!-- <div class="wa-contain button-container">
+            <a href="/02+.html">
+                <div class="button">Task 02+</div>
+                </a>
+        </div> -->
     </div>
 
     <style>
+        .wa-contain {
+            width: 75px;
+            height: 75px;
+            z-index: 999;
+            position: fixed;
+            bottom: 20px;
+            right: 60px;
+            /* border-radius: 100px; */
+            /* background-color: green; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            font-size: 15px;
+            /* border: rgb(3, 112, 3) 4px solid; */
+        }
         body {
             margin: 0;
             width: 1900px;
