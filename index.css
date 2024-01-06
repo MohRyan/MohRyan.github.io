@@ -4,213 +4,87 @@ body {
     display: flex;
     justify-content: center;
     background-color: rgba(0, 255, 255, 0.644);
-    
+
 }
 
-@media (max-width: 1100px) {
-    .container {
-        width: 100%;
-        display: flex;
-        overflow: hidden;
-        
-    } 
-    .navbar {
-        width: 100%;
-        height: 80px;
-        display: flex;
-    }
-    .task-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        width: 100%;
-        height: auto;
-        margin-right: 50px;
-        margin-bottom: 200px;
-    }
+/* ======== Media Mobile============= */
+/* @media only screen and (max-width: 622px) {} */
 
-    li {
-        display: flex;
-        flex-direction: column;
-        height: 150px;
-        border-radius: 15px;
-        margin-bottom: 150px;
-    }
-    li a {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    li img {
-        width: 350px;
-        height: 270px;
-    }
-    ul li a .img {
-        width: 450px;
-        height: 300px;
-    }
-    .text {
-        font-size: x-large;
-    }
-    .kel {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    ul {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-        gap: 150px;
-    }
-    .kel1 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .kel2 {
-        margin-top: 100px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .kel3 {
-        margin-top: 100px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .kel4 {
-        margin-top: 100px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 100px;
-    }
-    
-}
-@media (max-width: 1150px) {
-    li {
-        list-style: none;
-    }
-    a {
-        text-decoration: none;
-        color: black;
-    }
-    ul {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        align-items: center;
-        justify-content: space-around;
-    }
-    /* ================ Card Task =================== */
-    .task-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: row;
-        height: auto;
-        margin-right: 50px;
-        margin-bottom: 50px;
-    }
-    img {
-        width: 170px;
-        height: 150px;
-        border-radius: 15px;
-        margin: 0 10px ;
-    }
-    li a .img {
-        width: 220px;
-        height: 150px;
-        border-radius: 15px;
-    }
-    .kel {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-    }
-    li a{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+/* ======== Media Tablet============= */
+/* @media only screen and (min-width: 622px) {} */
+
+/* ======== Media Desktop/Laptop============= */
+@media only screen and (min-width: 992px) {
+    .conten {
+        width: 1400px;
     }
 }
 
-/* ================ Navbar =================== */
 .container {
+    width: 100vw;
     display: flex;
-    background-color: aqua;
-    width: 140vh;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ================ Conten =================== */
+
+.conten {
+    display: flex;
+    flex-direction: column;
+}
+
+.conten-ul {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+.conten-ul1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+
+}
+
+img {
+    width: 200px;
+    height: 180px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+img.akhir {
+    width: 310px;
+    height: 220px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+a li {
+    list-style: none;
+    color: black;
+    font-weight: bold;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 5px;
 }
-.navbar {
-    background-color: bisque;
-    display: flex;
-    width: 100%;
-    height: 60px;
-    justify-content: center;
-    align-items: center;
-} 
-li {
-    list-style: none;
-}
+
 a {
     text-decoration: none;
-    color: black;
-}
-ul {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    align-items: center;
-    justify-content: space-around;
-}
-/* ================ Card Task =================== */
-.task-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    height: auto;
-    margin-right: 50px;
-    margin-bottom: 50px;
-}
-img {
-    width: 170px;
-    height: 150px;
-    border-radius: 15px;
-    margin: 0 20px ;
-}
-li a .img {
-    width: 220px;
-    height: 150px;
-    border-radius: 15px;
-}
-.kel {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-}
-li a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }

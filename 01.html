@@ -1,28 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ============= FavIcon ============== -->
+    <link rel="icon" type="image/png" href="assets/media/iconNlogo/faviconlogo.png">
     <title>TASK 1</title>
-    <link rel="icon" type="image/png" href="/assets/faviconlogo.png">
+    <!-- ============= IconFontAwesome ============== -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- ============= FontGoogle ============== -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- ============= Bootstrap ============== -->
+    <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/js/bootstrap.js">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"> -->
+    <!-- ============= CssExternal ============== -->
+    <link rel="stylesheet" href="mediaResponsive.css">
+
 </head>
+
 <body>
     <div class="container">
-        <div class="card-container">        
+        <div class="card-container">
             <div class="card">
                 <div class="text">
                     <h2>Hi Welcome To My Profile</h2>
-                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, impedit animi ipsa qui esse praesentium, molestiae commodi repellat aspernatur asperiores minima beatae deserunt id quibusdam quas quia voluptate fuga natus nostrum harum voluptas quo? Distinctio doloremque sed a voluptatem temporibus aut sit fugit cupiditate unde accusantium dolorem voluptas maiores. </span>
+                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, impedit animi ipsa qui esse
+                        praesentium, molestiae commodi repellat aspernatur asperiores minima beatae deserunt id
+                        quibusdam quas quia voluptate fuga natus nostrum harum voluptas quo? Distinctio doloremque sed a
+                        voluptatem temporibus aut sit fugit cupiditate unde accusantium dolorem voluptas maiores.
+                    </span>
                 </div>
                 <div class="button-container">
-                    <a href="/03.html"><button>Contact</button></a>
-                </div>
-                <div class="cv-container">
-                    <a href="#"><span>Download CV</span><i class="fa-solid fa-download"></i></a>
+                    <div class="btn">
+                        <a href="/03.html"><button>Contact</button></a>
+                    </div>
+                    <div class="cv-container">
+                        <a href="#"><span>Download CV</span><i class="fa-solid fa-download"></i></a>
+                    </div>
                 </div>
                 <div class="icon-container">
                     <div class="icon">
@@ -33,179 +51,242 @@
                     </div>
                 </div>
                 <div class="img-container">
-                    <div class="img">
-                        <img src="/assets/FotoSelfie.jfif" alt="" class="FotoSelfie">
-                    </div>
-                    <div class="nama-container">
+                    <div class="img-conten">
+                        <div class="img">
+                        </div>
                         <span class="nama">Moh Ryan K H</span>
-                        <span class="status">FrontEnd Developer</span> 
+                        <span class="status">FrontEnd Developer</span>
                     </div>
-                </div>  
-            </div>
-            <div class="btn-navigasi">
-                <a href="/01vidpres.html"><button>Video</button></a>
-                <a href="/index.html"><button>Back</button></a>
+                </div>
+                <div class="btn-navigasi">
+                    <a href="/01vidpres.html"><button>Video</button></a>
+                    <a href="/index.html"><button>Back</button></a>
+                </div>
             </div>
         </div>
     </div>
 
     <style>
-        
-    * {
-        font-family: 'Poppins', sans-serif;
-    }
-        
-    body {
-    margin: 0;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    }
-/* ================ Card =================== */
-    .container {
-        background-color: hsla(0, 0%, 91%, 0.808);
-        width: 150vh;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .card-container {
-        background-color: hsl(0, 0%, 100%);
-        display: flex;
-        flex-direction: column;
-        width: 80vh;
-        height: 800px;
-        border-radius: 5px;
-        box-shadow: 0 0 12px 5px rgba(0, 0, 0, 0.349);
-        padding: 20px 20px;
-        align-items: center;
-    }
-    .card {
-        display: flex;
-        flex-direction: column;
-        width: 50vh;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    .text h2{
-        display: flex;
-        justify-content: start;
+        /* ======== Media Mobile============= */
+        @media only screen and (max-width: 622px) {
+            .card-container {
+                width: 450px;
 
-    }
-    .text {
-        text-align: justify;
-        margin-bottom: 25px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .img-container {
-        width: auto;
-        height: 330px;
-        box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.349);
-        border-radius: 10px; 
-        margin-bottom: 15px;
-        display: flex;
-        flex-direction: column;
-    }
-    .img{
-        width: 255px; 
-        height: 255px;
-    }
-    .FotoSelfie{
-        width: 255px; 
-        height: 255px;
-        border-radius: 10px 10px 0 0;
-    }
-    .nama-container{
-        padding: 10px;
-    }
-    .nama{
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-        font-size: 20px;
-        font-weight: bold;
-    }
-    .status {
-        font-size: small;
-        font-family: 'Times New Roman', Times, serif;
-    }
-    .icon-contain {
-        display: flex;     
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-    .icon {
-        display: flex;
-        justify-content: space-around;
-        width: 225px;
-        background-color: #fff;
-        margin-top: 35px;
-        margin-bottom: 35px;
-    }
-    i {
-        font-size: 35px;
-    }
-    .button-container {
-        display: flex;     
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-        margin-bottom: 10px;
-    }
-    a {
-        text-decoration: none;
-        color: black;
-        font-weight: bold;
-    }
+            }
 
-    a i {
-        font-size: 25px;
-        margin-left: 15px;
-    }
-    .cv-container {
-        display: flex;     
-        align-items: center;
-        justify-content: start;
-        width: 100%;
-    }
-    button {
-        display: flex;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        width: 105px;
-        height: 35px;
-        background-color: black;
-        border-radius: 25px;
-    }
-    a button:hover{
-        border: black 2px solid;
-        background-color: rgba(122, 122, 122, 0.349);
-        color: black;
-        cursor: pointer;
-    }
-    a button{
-        color: white;
-        font-weight: bold;
-    }
-    /* =================Navigasi============== */
-    .btn-navigasi {
-        width: 80vh;
-        display: flex;
-        justify-content: space-between;
-        position: fixed;
-        z-index: 99;
-        bottom: 55px;
-        
-    }
+            .card {
+                flex-wrap: wrap;
+                width: 80%;
+            }
+
+            .text {
+                flex-wrap: wrap;
+            }
+
+            .text h2 {
+                font-size: 1.2rem;
+            }
+
+            .button-container {
+                display: flex;
+                flex-direction: row;
+                text-align: center;
+                margin: 0 20px;
+            }
+
+
+        }
+
+        /* ======== Media Tablet============= */
+        @media only screen and (min-width: 622px) {
+            .card-container {
+                width: 600px;
+            }
+
+            .card {
+                flex-wrap: wrap;
+                width: 80%;
+            }
+        }
+
+        /* ======== Media Desktop/Laptop============= */
+        /* @media only screen and (min-width: 992px) {
+            
+        } */
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        /* ======== Card ============= */
+
+        .card-container {
+            box-sizing: border-box;
+            background-color: hsl(0, 0%, 100%);
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            /* height: 880px; */
+            border-radius: 10px;
+            box-shadow: 0 0 12px 5px rgba(0, 0, 0, 0.349);
+            padding: 20px 20px;
+            align-items: center;
+        }
+
+        .card {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        /* ======== Title dan Text ============= */
+
+        .text h2 {
+            display: flex;
+            justify-content: start;
+
+        }
+
+        .text {
+            text-align: justify;
+            margin-bottom: 25px;
+        }
+
+        /* ======== Button dan CV ============= */
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .cv-container {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            width: 200px;
+        }
+
+        button {
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            width: 105px;
+            height: 35px;
+            background-color: black;
+            border-radius: 25px;
+        }
+
+        a button:hover {
+            border: black 2px solid;
+            background-color: rgba(122, 122, 122, 0.349);
+            color: black;
+            cursor: pointer;
+        }
+
+        a button {
+            color: white;
+            font-weight: bold;
+        }
+
+        /* ======== icon ============= */
+
+        .icon-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-bottom: 45px;
+        }
+
+        .icon {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            width: 70%;
+            margin-top: 35px;
+        }
+
+        i {
+            font-size: 40px;
+        }
+
+        /* ======== image ============= */
+
+        .img-container {
+            /* background-color: blue; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .img-conten {
+            width: 255px;
+            height: 330px;
+            box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.349);
+            border-radius: 10px;
+            margin-bottom: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .img {
+            width: 255px;
+            height: 255px;
+            background-image: url(/assets/media/FotoSelfie.jfif);
+            border-radius: 10px 10px 0 0;
+            box-sizing: border-box;
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 15px;
+        }
+
+        .nama-container {
+            padding: 10px;
+        }
+
+        .nama {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .status {
+            font-size: small;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        a i {
+            font-size: 25px;
+            margin-left: 15px;
+        }
+
+        /* =================Navigasi============== */
+        .btn-navigasi {
+            margin-top: 20px;
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
     </style>
-
-
 </body>
-</html>
 
+
+</html>
