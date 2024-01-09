@@ -15,12 +15,22 @@
     <div class="button">
         <i class="fa-solid fa-play"></i>
     </div>
-    <span>Open Video</span>
+    <span>Open Video 1</span>
     <div class="video">
-        <video src="assets/media/videopresentage/04 Tutorial Javascript_ Cara Menghitung Berapa Panjang String.mp4"
-            controls></video>
+        <video src="assets/media/videopresentage/Task 01.mp4" controls></video>
         <div class="video-btn">
-            <span><a href="/01.html">Task 01</a></span>
+            <span class="back"><a href="">Back</a></span>
+            <span><a href="/index.html">AllTask</a></span>
+        </div>
+    </div>
+    <div class="button2">
+        <i class="fa-solid fa-play"></i>
+    </div>
+    <span>Open Video 2</span>
+    <div class="video2">
+        <video class="dua" src="assets/media/videopresentage/Task 01-2.mp4" controls></video>
+        <div class="video-btn2">
+            <span class="back"><a href="">Back</a></span>
             <span><a href="/index.html">AllTask</a></span>
         </div>
     </div>
@@ -40,7 +50,8 @@
             flex-direction: column;
         }
 
-        .button {
+        .button,
+        .button2 {
             width: 80px;
             height: 80px;
             border-radius: 50%;
@@ -51,9 +62,11 @@
             align-items: center;
             margin-bottom: 15px;
             box-shadow: 0 15px 25px #cecece;
+            margin-top: 25px;
         }
 
-        .button:hover {
+        .button:hover,
+        .button2:hover {
             cursor: pointer;
         }
 
@@ -66,12 +79,14 @@
             color: white;
         }
 
-        .video-btn {
+        .video-btn,
+        .video-btn2 {
             display: flex;
             gap: 125px;
         }
 
-        .video {
+        .video,
+        .video2 {
             position: fixed;
             width: 100%;
             height: 100%;
@@ -83,11 +98,14 @@
             z-index: 9999;
         }
 
-        .video video {
-            max-width: 90%;
+        .video video,
+        .video2 video {
+            max-width: 70%;
         }
 
-        .video span {
+
+        .video span,
+        .video2 span {
             padding: 15px 35px;
             background-color: black;
             border-radius: 35px;
@@ -99,9 +117,26 @@
     <script>
         let button = document.querySelector('.button');
         let video = document.querySelector('.video');
+        let video2 = document.querySelector('.video2');
+        let button2 = document.querySelector('.button2');
+        let back = document.querySelector('.back');
+        let back2 = document.querySelector('.back2');
+
         button.onclick = function () {
             button.classList.add("active")
             video.style.display = 'flex'
+        }
+        button2.onclick = function () {
+            button2.classList.add("active")
+            video2.style.display = 'flex'
+        }
+        back.onclick = function () {
+            button.classList.remove("active")
+            video.style.display = 'flex'
+        }
+        back2.onclick = function () {
+            button2.classList.remove("active")
+            video2.style.display = 'flex'
         }
     </script>
 </body>
